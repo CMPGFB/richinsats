@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satoshis to Bitcoin Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Satoshis to Bitcoin Calculator</h1>
+        <p id="price"></p>
+        <form id="calculatorForm">
+            <label for="satoshis">Enter Satoshis:</label>
+            <input type="number" id="satoshis" name="satoshis" min="0" required>
+            <button type="submit">Convert to BTC</button>
+        </form>
+        <form id="btcForm">
+            <label for="btc">Enter BTC:</label>
+            <input type="number" id="btc" name="btc" min="0" step="0.00000001" required>
+            <button type="submit">Convert to Satoshis</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <footer>
+        <p>Powered by <a href="https://www.twitter.com/cmpgfb" target="_blank">@CMPGFB</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
